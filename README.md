@@ -1,4 +1,4 @@
-# carro de compras
+# ejemplo carro de compras
 
 ## Project setup
 
