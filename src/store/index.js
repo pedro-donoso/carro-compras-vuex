@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
-Vue.use(Vuex)
-
+import productos from './modules/productos'
+import { getters } from './getters'
+import { mutations } from './mutations'
+Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
+    carro: [],
   },
-  mutations: {
-  },
-  actions: {
-  },
+  getters: getters,
+  mutations: mutations,
   modules: {
+    productos
   }
-})
+});

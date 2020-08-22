@@ -1,5 +1,6 @@
-module.exports = {
-  presets: [
-    '@vue/cli-plugin-babel/preset'
+{
+  "presets" [
+    "stage-2",
+    ["env", { "modules": false }]
   ]
 }
