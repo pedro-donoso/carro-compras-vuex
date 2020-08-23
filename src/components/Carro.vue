@@ -1,11 +1,11 @@
 <template>
   <v-container>
-    <h2>Carro de la compra</h2>
-    <h3>Total compra: {{ totalCompra.toFixed(2) }} $</h3>
+    <hr />
+    <h3>Total compra: $ {{ totalCompra.toFixed(2) }} CLP</h3>
     <ul>
       <li v-for="(producto, indice) in carro" :key="indice">
         {{ producto.nombre }}
-        <v-btn x-small color="secondary" dark @click="eliminarProducto(indice)">X</v-btn>
+        <v-btn x-small color="secondary" dark @click="eliminarProducto(indice)">eliminar producto</v-btn>
       </li>
     </ul>
   </v-container>
@@ -22,3 +22,4 @@ export default {
   methods: mapMutations(["eliminarProducto"]),
 };
 </script>
+

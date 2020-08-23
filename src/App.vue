@@ -1,7 +1,7 @@
 <template>
   <section>
-    <productos></productos>
-    <carro></carro>
+    <productos />
+    <carro />
   </section>
 </template>
 
@@ -13,3 +13,9 @@ export default {
   components: { Productos, Carro },
 };
 </script>
+
+<style lang="scss">
+  html{
+    background: greenyellow;
+  }
+</style>
